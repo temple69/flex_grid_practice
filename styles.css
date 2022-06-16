@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300;400;700&family=Lexend+Deca:wght@300;400&display=swap');
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    gap: .3em;
+    flex-wrap: wrap;
+}
+
+nav {
+    background-color: aliceblue;
+    height: 10vmin;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+nav ul li {
+    padding-left: 1em;
+    font-size: 2em;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+.container article {
+    width: 20%;
+    padding: 0 auto;
+    padding: 2.5em;
+    box-shadow: 2px 2px 4px 2px inset gray;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.container article:hover {
+    transform: scale(1.05);
+}
+
+.container article>h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-size: 2em;
+    margin: 5% 0;
+}
+
+.container article>p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    width: 80%;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container article>button {
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    height: 40px;
+    width: 80%;
+    margin-top: 20%;
+}
+
+.container>article:first-child {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.container>article:first-child>button {
+    color: hsl(31, 77%, 52%);
+}
+
+.container>article:nth-child(2) {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.container>article:nth-child(2)>button {
+    color: hsl(179, 100%, 13%);
+}
+
+.container>article:last-child {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.container>article:last-child>button {
+    color: hsl(184, 100%, 22%);
+}
+
+.container article>button:active {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+
+/*styling for flex ends*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(4, 12%);
+    gap: .5em;
+    place-content: center center;
+    margin: 1em 15%;
+    background-color: silver;
+    padding: 1em 0;
+}
+
+.grid_container div {
+    height: 30vmin;
+    box-shadow: -2px 2px 4px 2px inset gray;
+    border-radius: 10px;
+}
+
+.grid_container div:nth-child(1) {
+    background-color: yellow;
+    grid-column: span 3;
+}
+
+.grid_container div:nth-child(2) {
+    background-color: pink;
+}
+
+.grid_container div:nth-child(3) {
+    background-color: blue;
+    grid-row: span 2;
+}
+
+.grid_container div:nth-child(4) {
+    background-color: orange;
+    grid-column: span 3;
+    height: 12vmin;
+}
+
+.grid_container div:nth-child(5) {
+    background-color: orange;
+    grid-column: span 3;
+    height: 16vmin;
+}
+
+
+/*styling for flex ends*/
